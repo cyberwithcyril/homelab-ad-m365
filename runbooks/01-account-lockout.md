@@ -17,6 +17,7 @@
 
 **Notes:** Windows 11 adds its own short delay after each wrong password ("Invalid credentials, delaying next attempt"), separate from the domain policy.
 
+![delay](../screenshots/01-lockout-delay.png)
 ![before](../screenshots/01-lockout-before.png)
 ![found](../screenshots/01-lockout-found.png)
 ![unlock](../screenshots/01-lockout-gui-unlock.png)
