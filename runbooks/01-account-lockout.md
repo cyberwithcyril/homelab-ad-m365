@@ -17,9 +17,29 @@
 
 **Notes:** Windows 11 adds its own short delay after each wrong password ("Invalid credentials, delaying next attempt"), separate from the domain policy.
 
-![delay](../screenshots/01-lockout-delay.png)
-![before](../screenshots/01-lockout-before.png)
-![found](../screenshots/01-lockout-found.png)
-![unlock](../screenshots/01-lockout-gui-unlock.png)
-![after](../screenshots/01-lockout-after.png)
-![powershell](../screenshots/01-lockout-powershell.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/01-lockout-delay.png" width="650" alt="Wrong passwords on CLIENT01 (Windows 11 adds a delay between attempts)"><br>
+  <em>Wrong passwords on CLIENT01 (Windows 11 adds a delay between attempts)</em>
+</p>
+<p align="center">
+  <img src="../screenshots/01-lockout-before.png" width="650" alt="User's view: account locked out"><br>
+  <em>User's view: account locked out</em>
+</p>
+<p align="center">
+  <img src="../screenshots/01-lockout-found.png" width="650" alt="badPwdCount 5, LockedOut True"><br>
+  <em>badPwdCount 5, LockedOut True</em>
+</p>
+<p align="center">
+  <img src="../screenshots/01-lockout-gui-unlock.png" width="650" alt="ADUC Account tab showing the lockout"><br>
+  <em>ADUC Account tab showing the lockout</em>
+</p>
+<p align="center">
+  <img src="../screenshots/01-lockout-after.png" width="650" alt="After unlock: badPwdCount 0, LockedOut False"><br>
+  <em>After unlock: badPwdCount 0, LockedOut False</em>
+</p>
+<p align="center">
+  <img src="../screenshots/01-lockout-powershell.png" width="650" alt="PowerShell: find locked accounts, unlock, confirm none remain"><br>
+  <em>PowerShell: find locked accounts, unlock, confirm none remain</em>
+</p>

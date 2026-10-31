@@ -16,5 +16,13 @@
 
 **Notes:** First sign-in failed with `badPwdCount 0`, meaning the attempt never reached AD: the username was typed without the domain, so Windows tried a local account. `LAB\nalvarez` worked.
 
-![after](../screenshots/05-newhire-after.png)
-![powershell](../screenshots/05-newhire-powershell.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/05-newhire-after.png" width="650" alt="New HR hire sees only the HR drive"><br>
+  <em>New HR hire sees only the HR drive</em>
+</p>
+<p align="center">
+  <img src="../screenshots/05-newhire-powershell.png" width="650" alt="Rerunnable script: 20 skipped, 1 created"><br>
+  <em>Rerunnable script: 20 skipped, 1 created</em>
+</p>

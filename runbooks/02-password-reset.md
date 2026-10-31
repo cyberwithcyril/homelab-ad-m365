@@ -20,8 +20,25 @@
 
 **Notes:** This reset can be done by the help desk without Domain Admin rights: `GG_Helpdesk` has delegated "Reset user passwords and force password change at next logon" on `_Users`. Tested as `cthomas.hd`: the reset succeeded and `Set-ADUser -Title` was denied with "Insufficient access rights."
 
-![dialog](../screenshots/02-reset-gui.png)
-![prompt](../screenshots/02-reset-must-change.png)
-![powershell](../screenshots/02-reset-powershell.png)
-![delegation](../screenshots/02-helpdesk-delegation.png)
-![reset vs denied](../screenshots/02-helpdesk-reset-vs-denied.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/02-reset-gui.png" width="650" alt="ADUC Reset Password with forced change at next logon"><br>
+  <em>ADUC Reset Password with forced change at next logon</em>
+</p>
+<p align="center">
+  <img src="../screenshots/02-reset-must-change.png" width="650" alt="User is prompted to set a new password"><br>
+  <em>User is prompted to set a new password</em>
+</p>
+<p align="center">
+  <img src="../screenshots/02-reset-powershell.png" width="650" alt="PowerShell reset; pwdLastSet 0 confirms the forced change"><br>
+  <em>PowerShell reset; pwdLastSet 0 confirms the forced change</em>
+</p>
+<p align="center">
+  <img src="../screenshots/02-helpdesk-delegation.png" width="650" alt="Password reset delegated to GG_Helpdesk on _Users"><br>
+  <em>Password reset delegated to GG_Helpdesk on _Users</em>
+</p>
+<p align="center">
+  <img src="../screenshots/02-helpdesk-reset-vs-denied.png" width="650" alt="Help desk account: reset allowed, other edits denied"><br>
+  <em>Help desk account: reset allowed, other edits denied</em>
+</p>

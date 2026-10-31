@@ -21,5 +21,13 @@
 - The common snapshot method (reset the machine password, then restore an older snapshot) didn't break trust here. AD accepts both the current and the previous machine password, so a single reset still leaves the old one valid.
 - Test with a user who has never signed in on that PC; cached credentials can let previous users in and hide the error.
 
-![before](../screenshots/08-trust-before.png)
-![fix](../screenshots/08-trust-fix.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/08-trust-before.png" width="650" alt="Trust relationship error at sign-in"><br>
+  <em>Trust relationship error at sign-in</em>
+</p>
+<p align="center">
+  <img src="../screenshots/08-trust-fix.png" width="650" alt="Secure channel False, repaired with domain admin credentials"><br>
+  <em>Secure channel False, repaired with domain admin credentials</em>
+</p>

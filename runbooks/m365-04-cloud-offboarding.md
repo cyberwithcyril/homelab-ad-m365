@@ -20,6 +20,17 @@
 - Order matters: removing the license before converting puts the mailbox on a path to deletion. Converted mailboxes don't need a license.
 - Check every permission type (Full Access, Send As, Send on Behalf) after removing someone from a shared mailbox; the admin view can lag until refreshed.
 
-![summary](../screenshots/m365-04-offboard-summary.png)
-![permissions](../screenshots/m365-04-offboard-permissions.png)
-![converted](../screenshots/m365-04-offboard-converted.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/m365-04-offboard-summary.png" width="650" alt="Offboarded: account disabled, no licenses"><br>
+  <em>Offboarded: account disabled, no licenses</em>
+</p>
+<p align="center">
+  <img src="../screenshots/m365-04-offboard-permissions.png" width="650" alt="Shared mailbox permissions after removing the leaver"><br>
+  <em>Shared mailbox permissions after removing the leaver</em>
+</p>
+<p align="center">
+  <img src="../screenshots/m365-04-offboard-converted.png" width="650" alt="Mailbox converted to shared for the manager"><br>
+  <em>Mailbox converted to shared for the manager</em>
+</p>

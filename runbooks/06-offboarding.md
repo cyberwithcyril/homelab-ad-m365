@@ -24,5 +24,13 @@
 
 **Notes:** `_Disabled` sits outside `_Users`, so the Drive Maps GPO and help desk delegation no longer apply to the account. Domain Users stays because it is the primary group.
 
-![before](../screenshots/06-offboard-before.png)
-![after](../screenshots/06-offboard-after.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/06-offboard-before.png" width="650" alt="Before: enabled, Sales OU, GG_Sales"><br>
+  <em>Before: enabled, Sales OU, GG_Sales</em>
+</p>
+<p align="center">
+  <img src="../screenshots/06-offboard-after.png" width="650" alt="After: both leavers disabled, dated, 0 groups, in _Disabled"><br>
+  <em>After: both leavers disabled, dated, 0 groups, in _Disabled</em>
+</p>

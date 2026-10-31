@@ -21,8 +21,25 @@
 
 **Escalate if:** There's no approval. Access changes need sign-off from HR or the new manager, not just the user's request.
 
-![before](../screenshots/03-move-before.png)
-![found](../screenshots/03-move-found.png)
-![after](../screenshots/03-move-after.png)
-![sales denied](../screenshots/03-move-sales-denied.png)
-![powershell](../screenshots/03-move-powershell.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/03-move-before.png" width="650" alt="HR share denied after the department change"><br>
+  <em>HR share denied after the department change</em>
+</p>
+<p align="center">
+  <img src="../screenshots/03-move-found.png" width="650" alt="Department HR, but still in the Sales OU and GG_Sales"><br>
+  <em>Department HR, but still in the Sales OU and GG_Sales</em>
+</p>
+<p align="center">
+  <img src="../screenshots/03-move-after.png" width="650" alt="HR share opens after the fix"><br>
+  <em>HR share opens after the fix</em>
+</p>
+<p align="center">
+  <img src="../screenshots/03-move-sales-denied.png" width="650" alt="Old Sales access removed"><br>
+  <em>Old Sales access removed</em>
+</p>
+<p align="center">
+  <img src="../screenshots/03-move-powershell.png" width="650" alt="PowerShell fix: GG_HR added, GG_Sales removed, moved to OU=HR"><br>
+  <em>PowerShell fix: GG_HR added, GG_Sales removed, moved to OU=HR</em>
+</p>

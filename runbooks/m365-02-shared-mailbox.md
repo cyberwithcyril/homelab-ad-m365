@@ -19,5 +19,13 @@
 - Send As shows mail from support@; Send on Behalf shows "user on behalf of Support."
 - By default, sent items land only in the sender's own Sent Items. Turning on sent-item copying keeps replies visible to the whole team.
 
-![mailbox](../screenshots/m365-02-shared-mailbox.png)
-![owa](../screenshots/m365-02-owa.png)
+## Screenshots
+
+<p align="center">
+  <img src="../screenshots/m365-02-shared-mailbox.png" width="650" alt="Shared mailbox with two members"><br>
+  <em>Shared mailbox with two members</em>
+</p>
+<p align="center">
+  <img src="../screenshots/m365-02-owa.png" width="650" alt="Shared mailbox in the member's Outlook on the web"><br>
+  <em>Shared mailbox in the member's Outlook on the web</em>
+</p>
