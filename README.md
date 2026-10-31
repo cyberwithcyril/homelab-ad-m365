@@ -41,6 +41,36 @@ flowchart LR
 | Group Policy | `Drive Maps` GPO with item-level targeting (S:, H:, I: by group); account lockout policy (5 attempts / 15 min) in Default Domain Policy |
 | Microsoft 365 | Business Premium trial tenant: licensed users, security and Microsoft 365 groups, security defaults with Microsoft Authenticator, shared mailbox |
 
+## Build evidence
+
+**On-prem**
+
+| | |
+| --- | --- |
+| ![Domain](screenshots/build-01-domain.png) | ![Domain controllers](screenshots/build-07-domain-controllers.png) |
+| Forest `lab.local`, DC01 at 10.0.0.1 | DC01 as global catalog |
+| ![DC01 network](screenshots/build-08-dc01-network.png) | ![DHCP](screenshots/build-09-dhcp-scope.png) |
+| Static LAB adapter 10.0.0.1/24, DNS pointing to itself | DHCP scope 10.0.0.100-200 |
+| ![NAT](screenshots/build-10-nat.png) | ![Client internet](screenshots/build-13-client-internet.png) |
+| RRAS NAT: INTERNET public, LAB private | Client reaching the internet through DC01 after enabling IPv4 LAN routing |
+| ![OU structure](screenshots/build-11-ou-structure.png) | ![Client joined](screenshots/build-02-client-joined.png) |
+| Department OUs with users, including the delegated help desk account | CLIENT01 joined to the domain |
+| ![Domain login](screenshots/build-03-domain-login.png) | ![NTFS](screenshots/build-04-ntfs-permissions.png) |
+| Domain sign-in on the client | Sales share: only GG_Sales (Modify), Domain Admins and SYSTEM |
+| ![gpresult](screenshots/build-12-gpresult.png) | ![Lockout policy](screenshots/build-05-lockout-policy.png) |
+| Drive Maps GPO applied to a Sales user | Lockout policy: 5 attempts, 15 minutes |
+| ![Snapshot](screenshots/build-06-snapshot.png) | |
+| Clean snapshot before adding clients | |
+
+**Microsoft 365**
+
+| | |
+| --- | --- |
+| ![Users](screenshots/m365-00-users.png) | ![Groups](screenshots/m365-00-groups.png) |
+| Five licensed users (Business Premium) | Security group vs Microsoft 365 group |
+| ![Security defaults](screenshots/m365-00-security-defaults.png) | |
+| Security defaults enabled (MFA for all users) | |
+
 ## Tickets worked
 
 Each runbook covers symptoms, first checks, cause, fix (GUI and PowerShell), verification, and when to escalate.
